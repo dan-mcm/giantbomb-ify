@@ -1,0 +1,39 @@
+/* active version implements image change by icon click */
+{
+  "name": "GiantBomb-ify",
+  "version": "0.1",
+  "manifest_version" : 2,
+  "description": "Replaces all images with GB Staff",
+  "icons": {
+    "16": "logo-small.png",
+    "48": "logo-small.png",
+    "128": "logo-small.png"
+  },
+  "background" : {
+    "scripts" : ["scripts/background.js"]
+  },
+  "browser_action": {
+    "default_icon": "logo-small.png"
+  },
+  "web_accessible_resources": ["images/*.jpg"],
+  "permissions": ["activeTab"]
+}
+
+/* below version implements image change on page load
+  {
+    "manifest_version": 2,
+    "short_name": "Bradify-Simple",
+    "name": "Bradify-Simple",
+    "version": "0.0.1",
+    "icons": {
+      "16": "logo-small.png",
+      "48": "logo-small.png",
+      "128": "logo-small.png"
+    },
+    "content_scripts": [ {
+    "matches": ["<all_urls>"],
+    "js": ["imageswap.js"]
+  } ],
+    "permissions": ["activeTab"]
+  }
+*/

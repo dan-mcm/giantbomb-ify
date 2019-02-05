@@ -18,6 +18,15 @@ var gb_images = [
 
 for (var i = 0, l = images.length; i < l; i++) {
   var index = Math.floor(Math.random() * Math.floor(i%gb_images.length+1))
+
+  // GB implementation (default)
   images[i].src = gb_images[index];
+
+  // Nicholas Cage implementation
+  // images[i].src = "https://www.placecage.com/" + images[i].width + "/" + images[i].height
+
+  // Bill Murray Implementation
+  // images[i].src = "https://fillmurray.com/" + images[i].width + "/" + images[i].height
+
   var prev = i
 }

@@ -1,8 +1,15 @@
 # GiantBomb-ify
 
-A chrome extension that will replace all <img> tags on your current page with one of 10 random [GiantBomb](http://www.giantbomb.com/) staff members.
+A chrome extension that was originally built to replace all <img> tags on your current page with one of 10 random [GiantBomb](http://www.giantbomb.com/) staff members.
 
 <img src="https://thumbs.gfycat.com/ColossalQuarrelsomeBunny-size_restricted.gif"/>
+
+Since its initial setup the extension has additional functionality to replace images with:
+
+* Random Nicholas Cage images based on size & use of external service [Placecage](https://www.placecage.com).
+* Random Bill Murray images based on size & use of external service [Fillmurray]( https://fillmurray.com).
+
+To enable the additional functionality modify the commented code in the scripts/imageswap.js file.
 
 ## Setup Instructions
 
@@ -13,6 +20,6 @@ A chrome extension that will replace all <img> tags on your current page with on
 
 ## Alternate Setup
 
-The manifest.json file is setup to only change images when the icon is clicked. There is functionality to immedaitely replace the images on a page load by commenting out the top code segment and uncommenting the bottom code segment in this file.
+The manifest.json file is setup to only change images when the icon is clicked. There is functionality to immediately replace the images on a page load by commenting out the top code segment and uncommenting the bottom code segment in this file.
 
 Want to use your own images? navigate to scripts/imageswap and replace the hardcoded image urls. A sample localfile is also included in the event you wish to use your own local images! Note that you may need to update the chromeExtensionId variable to correspond to your local build - the correct ID will be visibile on the chrome://extensions section.
